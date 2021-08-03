@@ -1,0 +1,83 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.grey {
+  background-color: #757575;
+  color: white;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: lightblue;
+}
+
+p {
+  margin: 2px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  border-color: black;
+}
+
+th {
+  background-color: gray;
+  color: white;
+  border: 0px solid black;
+  cursor: default;
+}
+td {
+  border: 0px solid #dddddd;
+  cursor: pointer;
+}
+td,
+th {
+  text-align: left;
+  padding: 0px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  background-color: dimgray;
+  color: white;
+}
+
+#tableFlightInfo th {
+  background-color: #dddddd;
+  color: black;
+  border: 0px;
+}
+
+#tableFlightInfo td {
+  background-color: #dddddd;
+  color: black;
+}
+#workers {
+  background-color: #80ffff;
+  padding: 10px 20px;
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}

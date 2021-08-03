@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest Home Assignment</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root">
+      <table frame="border" border="1" id="tableWorkers">
+        <tr>
+          <th id="workers">Workers</th>
+        </tr>
+      </table>
+      <table frame="hsides" border="1" id="tableFlightBasicInfo">
+        <tr>
+          <th>Flight number</th>
+          <th>Origin</th>
+          <th>Origin Date</th>
+          <th>Destination</th>
+          <th>Destination Date</th>
+        </tr>
+      </table>
+      <table frame="border" border="1" id="tableFlightInfo">
+        <tr>
+          <th>Plane number</th>
+          <td id="planeNum"></td>
+        </tr>
+        <tr>
+          <th>Duration of the flight</th>
+          <td id="flightDuration"></td>
+        </tr>
+        <tr>
+          <th>Origin gate</th>
+          <td id="originGate"></td>
+        </tr>
+        <tr>
+          <th>Destination gate</th>
+          <td id="destGate"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="workers.js"></script>
+    <script src="flight.js"></script>
+  </body>
+</html>
